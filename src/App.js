@@ -109,7 +109,7 @@ function App() {
   useEffect(() => {
     $.ajax({
       headers: { 'X-Auth-Token': token },
-      url: 'http://api.football-data.org/v2/competitions/?plan=TIER_ONE',
+      url: 'https://api.football-data.org/v2/competitions/?plan=TIER_ONE',
       dataType: 'json',
       type: 'GET',
     }).done(function (response) {
