@@ -78,9 +78,10 @@ const MatchDataSheet = (props) => {
                     <div>{getT()}</div>
                 </div>
             </div>
-            <div className={`halfPin ${props.match.match.score.halfTime.homeTeam === null ? '' : 'displayNone'}`}>-- First Half --</div>
-            <div className={`halfPin ${props.match.match.score.halfTime.homeTeam === null ? 'displayNone' : ''}`}>-- Second Half --</div>
+
             <div className={`matchClock ${props.match.match.status === "FINISHED" ? "displayNone" : ""}`}>
+                <div className={`halfPin ${props.match.match.score.halfTime.homeTeam === null ? '' : 'displayNone'}`}>-- First Half --</div>
+                <div className={`halfPin ${props.match.match.score.halfTime.homeTeam === null ? 'displayNone' : ''}`}>-- Second Half --</div>
                 <div>Match clock:</div>
                 <Clock utc={props.match.match.utcDate} match={props.match} ></Clock>
             </div>
