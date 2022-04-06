@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import React, { useState } from 'react';
 
 import Competition from './Competition';
 import Match from './Match';
@@ -19,8 +18,6 @@ const Main = (props) => {
                         key={d.id}
                         setMainState={props.setMainState}
                         data={d}
-                        fetch={props.fetch}
-                        setFetch={props.setFetch}
                         selectCompetition={props.selectCompetition}
                         selectMatch={props.selectMatch}
                     ></Competition>
@@ -36,8 +33,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>
@@ -49,8 +44,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>
@@ -62,8 +55,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>
@@ -75,8 +66,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>
@@ -88,8 +77,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>
@@ -101,8 +88,6 @@ const Main = (props) => {
                                 key={m.id}
                                 setMainState={props.setMainState}
                                 match={m}
-                                fetch={props.fetch}
-                                setFetch={props.setFetch}
                                 selectCompetition={props.selectCompetition}
                                 selectMatch={props.selectMatch}
                             ></Match>

@@ -100,6 +100,19 @@ header {
     flex-direction: row;
     font-size: 1.6em;
     position: relative;
+    margin-bottom: 60px !important;
+}
+
+.homeTeam,
+.awayTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgb(198, 204, 219);
+    min-width: 200px;
 }
 
 .homeTeam {
@@ -127,8 +140,15 @@ header {
     justify-content: center;
 }
 
-.scoresCont>div>div {
+.scoresCont>div>div>div {
     margin: 0 10px;
+}
+
+.scoresCont>div>div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    justify-content: center;
 }
 
 .timeBox {
@@ -146,6 +166,10 @@ header {
 
 .timeBox>div>div {
     margin: 0 10px;
+}
+
+.halfPin {
+    font-size: 1.6em;
 }
 
 .matchClock {
