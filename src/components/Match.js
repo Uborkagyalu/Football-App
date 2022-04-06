@@ -6,7 +6,7 @@ const Match = (props) => {
         let date = new Date(props.match.utcDate);
         let year = date.getFullYear();
         let month = date.getMonth() + 1 < 10 ? zero.concat(date.getMonth() + 1) : date.getMonth() + 1;
-        let day = date.getDay() < 10 ? "0" + date.getMonth() : date.getMonth();
+        let day = date.getDate() < 10 ? zero.concat(date.getDate()) : date.getDate();
 
         return year + "." + month + "." + day;
     }
