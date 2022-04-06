@@ -1,38 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(171, 179, 204);
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.displayNone {
+    display: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.breadcrumbCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    font-size: 1.1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.breadcrumb {
+    margin: 0 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.breadcrumb:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.competition,
+.matchCont {
+    font-size: 1.8em;
+    background-color: rgb(198, 204, 219);
+    text-align: center;
+    min-width: 400px;
+    max-width: 90vw;
+    padding: 5px 30px;
+    margin: 2px 0;
+    border-bottom: solid black 2px;
+    border-left: solid rgb(131, 131, 131) 2px;
+    border-top: solid rgb(131, 131, 131) 2px;
+    border-right: solid black 2px;
+    cursor: pointer;
+}
+
+.competition:active,
+.matchCont:active {
+    border-bottom: solid rgb(131, 131, 131) 2px;
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+    border-right: solid rgb(131, 131, 131) 2px;
+}
+
+.matchCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.matchCont>div {
+    margin: 0 10px;
+}
+
+.matchDataCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matchDataCont>div {
+    margin: 15px 0;
+}
+
+.matchTitle {
+    font-size: 2em;
+}
+
+.teamsCont {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6em;
+    position: relative;
+}
+
+.homeTeam {
+    position: absolute;
+    right: 250%;
+    white-space: nowrap;
+}
+
+.awayTeam {
+    position: absolute;
+    left: 250%;
+    white-space: nowrap;
+}
+
+.scoresCont {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+}
+
+.scoresCont>div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px;
+    justify-content: center;
+}
+
+.scoresCont>div>div {
+    margin: 0 10px;
+}
+
+.timeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+.timeBox>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timeBox>div>div {
+    margin: 0 10px;
+}
+
+.matchClock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
 }

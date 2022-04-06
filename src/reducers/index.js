@@ -1,10 +1,13 @@
-import footballData from './footballData';
+import competitionsData from './competitionsData';
+import competitionData from './competitionData';
+import matchData from './matchData';
 
 import { combineReducers } from 'redux';
 
 const allReducers = combineReducers({
-    footballData: footballData
-
+    competitionsData: competitionsData,
+    competitionData: competitionData,
+    matchData: matchData
 });
 
 export default allReducers;
