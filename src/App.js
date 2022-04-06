@@ -23,7 +23,7 @@ function App() {
   const match = useSelector(state => state.matchData);
 
   const breadcrumbNav = (e) => {
-    let url = "/";
+    let url = "/champCheck/13";
 
     switch (e.target.dataset.crumbtype) {
       case "home":
@@ -33,7 +33,7 @@ function App() {
         setFetch("false");
         break;
       case "competition":
-        url += e.target.dataset.crumb;
+        url += "/" +e.target.dataset.crumb;
         setMainState("competition");
         dispatch(setMatchData({ match: { homeTeam: { name: "" }, awayTeam: { name: "" } } }));
         setFetch("comp");
@@ -58,7 +58,7 @@ function App() {
       type: 'GET',
     }).done(function (response) {
       dispatch(setCompetitionData(response));
-      let url = "/";
+      let url = "/champCheck/13/";
       url += response.competition.name;
       window.history.replaceState({ url }, url, url);
       setMainState("competition");
@@ -74,7 +74,7 @@ function App() {
       type: 'GET',
     }).done(function (response) {
       dispatch(setMatchData(response));
-      let url = "/";
+      let url = "/champCheck/13/";
       url += response.match.competition.name + response.match.homeTeam.name + '_vs_' + response.match.awayTeam.name;
       window.history.replaceState({ url }, url, url);
       setMainState("match");
